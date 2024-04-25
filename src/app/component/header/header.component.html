@@ -1,0 +1,13 @@
+<nav class="w-full max-sm:px-5 flex justify-center">
+    <div class="w-3/4 max-sm:w-full h-16 flex justify-between items-center">
+        <div>
+            <img class="w-12 h-12 rounded-full" src="../../../assets/golden-retriver.png" alt="">
+        </div>
+        <ul class="flex justify-center items-center gap-5">
+            <li routerLinkActive="text-[#d13a7a]" [routerLinkActiveOptions]="{exact: true}" class="cursor-pointer font-medium" routerLink="/">Home</li>
+            <li routerLinkActive="text-[#d13a7a]" class="cursor-pointer font-medium" routerLink="/about">About</li>
+            <li routerLinkActive="text-[#d13a7a]" class="cursor-pointer font-medium">Dogs</li>
+            <mat-slide-toggle class="pl-3" (change)="toogleTheme()" [(ngModel)]="checked"></mat-slide-toggle>
+        </ul>
+    </div>
+</nav>

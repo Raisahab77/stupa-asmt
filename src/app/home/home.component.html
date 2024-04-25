@@ -1,0 +1,22 @@
+<div class="w-fit relative flex justify-center items-center">
+    <div class="w-14 h-14 bg-[#d13a7a] rounded-md absolute -top-2 left-3"></div>
+    <div class="w-14 h-14 border-2 border-[#d13a7a] rounded-md absolute box-design"></div>
+</div>
+
+<div class="w-full flex justify-center">
+    <div class="w-3/4 flex justify-between max-sm:flex-col">
+        <div class="text-content">
+            <h1><span>D</span>OG</h1>
+            <img src=".././../assets/golden-retriver.png" alt="Dog Image" class="dog-image">
+        </div>
+        <img src=".././../assets/golden-retriver.png" alt="Dog Image" class="">
+    </div>
+</div>
+
+<div class="w-full h-24 flex items-center bg-[#d13a7a]">
+    <span class="text-white text-2xl font-bold ml-4">Looking for a Dog ?</span> <button class="font-semibold text-white px-4 py-2 bg-[#5dde3d] rounded-md ml-5">Call us now</button>
+</div>
+
+<div class="py-10 flex justify-center gap-6 flex-wrap">
+    <app-dog-card *ngFor="let dog of dogsData" [data]="dog"></app-dog-card>
+</div>

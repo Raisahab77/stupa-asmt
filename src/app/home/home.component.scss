@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+    width: 300px; /* Adjust container width as needed */
+    height: 200px; /* Adjust container height as needed */
+}
+
+.text-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 150px;
+    font-weight: bold;
+    margin: 0;
+    color: #d13a7a;
+    text-shadow: 3px 3px 5px #820036;
+    z-index: 1;
+}
+
+h1 span {
+    position: relative;
+    z-index: 1;
+}
+
+.dog-image {
+    position: absolute;
+    width: 70px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(50deg) rotateY(10deg) rotateZ(0deg); /* Adjust rotation as needed */
+    z-index: 0;
+}
+
+.box-design{
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,-50%);
+}
